@@ -28,6 +28,7 @@ public class Teste
 				 
 				 double[][] matrizDaSimulacao = new double[TOTAL_DE_CLIENTES][TOTAL_DE_OPERACOES];
 				 
+				 int selectItem = 1;
 				 //inicializando elementos da matriz como 0
 				matrizDaSimulacao =  testeMatriz.inicializaMatriz(matrizDaSimulacao);
 				
@@ -161,6 +162,37 @@ public class Teste
 		{
 			return 14;
 		}
+	}
+	
+	public double tempoDesdeUltimaChegadaMonteCarlo()
+	{
+		double numeroAleatorioentreZeroEum = Math.random();
+		if(numeroAleatorioentreZeroEum >= 0.01 && numeroAleatorioentreZeroEum <= 0.35)
+			return 2.5;
+		
+		else if(numeroAleatorioentreZeroEum >= 0.36 && numeroAleatorioentreZeroEum <= 0.54)
+			return 7.5;
+		
+		else if(numeroAleatorioentreZeroEum >= 0.55 && numeroAleatorioentreZeroEum <= 0.73)
+			return 12.5;
+		
+		else if(numeroAleatorioentreZeroEum >= 0.74 && numeroAleatorioentreZeroEum <= 0.86)
+			return 17.5;
+		
+		else if(numeroAleatorioentreZeroEum >= 0.87 && numeroAleatorioentreZeroEum <= 0.89)
+			return 22.5;
+		
+		else if(numeroAleatorioentreZeroEum >=0.90 && numeroAleatorioentreZeroEum <= 0.96)
+			return 27.5;
+		
+		else if(numeroAleatorioentreZeroEum >= 0.97 && numeroAleatorioentreZeroEum < 0.98)
+			return 32.5;
+		
+		else if(numeroAleatorioentreZeroEum >=0.98 && numeroAleatorioentreZeroEum <=0.99)
+			return 37.5;
+		
+		else return 42.5;
+		
 	}
 	
 	public double tempoDeServico()
