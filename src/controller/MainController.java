@@ -26,7 +26,7 @@ public class MainController implements Initializable
 	// definição das colunas.
 			// definindo numero de linhas e colunas
 			static final int TOTAL_DE_OPERACOES = 9;
-			static final int TOTAL_DE_CLIENTES = 20;
+			static final int TOTAL_DE_CLIENTES = 20; //teste
 
 			// descrição das colunas
 			static int NUMERO_CLIENTE = 0;
